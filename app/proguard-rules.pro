@@ -23,9 +23,3 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-
--keep class com.omarea.xposed.XposedInterface{*;}
--keep class com.omarea.xposed.XposedCheck{*;}
-
--keepclassmembers class com.omarea.xposed.XposedInterface{*;}
--keepclassmembers class com.omarea.xposed.XposedCheck{*;}
