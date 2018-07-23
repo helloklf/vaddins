@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">微插件</string>
+    <string name="xposed_tab_a">全局配置</string>
+    <string name="xposed_tab_b">应用配置</string>
+    <string name="xposed_gamehf_title">王者荣耀 高帧率模式</string>
+    <string name="xposed_gamehf_desc">通过伪装设备型号为OPPO R11，让王者荣耀游戏允许开启60帧模式并提高游戏稳定性。</string>
+    <string name="xposed_dpi_title">应用单独配置</string>
+    <string name="xposed_appconfig_desc">允许对应用单独进行配置，自定义应用DPI和隐藏任务时需要开启此项。</string>
+    <string name="xposed_actived">模块已激活-工作正常</string>
+    <string name="xposed_unactive">Xposed模块未激活</string>
+    <string name="xposed_cannot_openxposed">Xposed管理器似乎还没有安装？</string>
+    <string name="search_packagename">搜索 应用名或PackageName</string>
+    <string name="adb_chrome_inspect">方便网页前端开发人员调试网页。开启手机adb连接到电脑，打开Chrome浏览器在地址栏输入chrome://inspect即可远程调试手机上的网页。</string>
+    <string name="webview_debug">强制开启Webview调试</string>
+    <string name="xuimod_ui_desc">功能代码借鉴于XuiMod，通过调整安卓系统UI的滚动速度和惯性摩擦值，并添加列表滑动到底部时的回弹效果。如果使用此功能后出现系统UI崩溃的情况，请进入REC删除com.omarea.vaddin！</string>
+    <string name="xuimod">平滑滚动 *仅限原生系统</string>
+    <string name="root_su_systemui_desc">去除原生类系统自带ROOT管理器在状态栏显示的SU图标，更改此项需重启SystemUI生效</string>
+    <string name="cm_los_su">禁用CM/LOS状态栏的SU图标</string>
+    <string name="hide_on_recent">从最近任务列表隐藏</string>
+    <string name="dpi">DPI</string>
+    <string name="please_wait">正在执行，请稍等</string>
+    <string name="xposed_full_screen">全面屏优化</string>
+    <string name="xposed_full_screen_desc">强制开启所有应用的全面屏适配</string>
+</resources>
