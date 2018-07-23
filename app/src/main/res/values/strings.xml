@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">微插件</string>
+    <string name="app_name">Scene - 高级设定</string>
     <string name="xposed_tab_a">全局配置</string>
     <string name="xposed_tab_b">应用配置</string>
     <string name="xposed_gamehf_title">王者荣耀 高帧率模式</string>

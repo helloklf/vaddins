@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public class ConfigChanged extends BroadcastReceiver {
     @SuppressLint("ApplySharedPref")
@@ -51,6 +52,7 @@ public class ConfigChanged extends BroadcastReceiver {
             }
             editor.commit();
             Log.e("VAddins", "配置已更新");
+            Toast.makeText(context, "当前应用Xposed配置已更新", Toast.LENGTH_SHORT).show();
             //pendingResult.setResultCode(0);
         } catch (Exception ex) {
             Log.e("VAddins", "配置更新失败");
