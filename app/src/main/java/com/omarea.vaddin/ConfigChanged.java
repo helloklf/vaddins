@@ -1,4 +1,4 @@
-package com.omarea;
+package com.omarea.vaddin;
 
 import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
