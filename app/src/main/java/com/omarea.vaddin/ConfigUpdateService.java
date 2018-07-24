@@ -84,7 +84,7 @@ public class ConfigUpdateService extends Service {
                 else
                     editor.remove(packageName + "_hide_recent");
 
-                if (dpi > 0)
+                if (dpi >= 96)
                     editor.putInt(packageName + "_dpi", dpi);
                 else
                     editor.remove(packageName + "_dpi");
