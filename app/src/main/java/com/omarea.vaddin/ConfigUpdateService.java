@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -64,6 +65,69 @@ public class ConfigUpdateService extends Service {
             } catch (Exception ex) {
             }
             return jsonObject.toString();
+        }
+
+        @Override
+        public boolean setBooleanValue(String field, boolean value) {
+            try {
+                SharedPreferences sharedPreferences = context.getSharedPreferences("xposed", Context.MODE_WORLD_READABLE);
+                sharedPreferences.edit().putBoolean(field, value).commit();
+                return true;
+            } catch (Exception ex) {
+                return false;
+            }
+        }
+
+        @Override
+        public boolean setStringValue(String field, String value) {
+            try {
+                SharedPreferences sharedPreferences = context.getSharedPreferences("xposed", Context.MODE_WORLD_READABLE);
+                sharedPreferences.edit().putString(field, value).commit();
+                return true;
+            } catch (Exception ex) {
+                return false;
+            }
+        }
+
+        @Override
+        public boolean setIntValue(String field, int value) {
+            try {
+                SharedPreferences sharedPreferences = context.getSharedPreferences("xposed", Context.MODE_WORLD_READABLE);
+                sharedPreferences.edit().putInt(field, value).commit();
+                return true;
+            } catch (Exception ex) {
+                return false;
+            }
+        }
+
+        @Override
+        public boolean getBooleanValue(String field, boolean defValue) {
+            try {
+                SharedPreferences sharedPreferences = context.getSharedPreferences("xposed", Context.MODE_WORLD_READABLE);
+                return sharedPreferences.getBoolean(field, defValue);
+            } catch (Exception ex) {
+                return defValue;
+            }
+        }
+
+        @Override
+        public int getIntValue(String field, int defValue) {
+            try {
+                SharedPreferences sharedPreferences = context.getSharedPreferences("xposed", Context.MODE_WORLD_READABLE);
+                return sharedPreferences.getInt(field, defValue);
+            } catch (Exception ex) {
+                return defValue;
+            }
+        }
+
+        @Override
+        public String getStringValue(String field, String defValue) {
+            try {
+                SharedPreferences sharedPreferences = context.getSharedPreferences("xposed", Context.MODE_WORLD_READABLE);
+                return sharedPreferences.getString(field, defValue);
+            } catch (Exception ex) {
+                return defValue;
+            }
         }
 
         @Override
