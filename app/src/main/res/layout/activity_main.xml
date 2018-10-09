@@ -101,21 +101,6 @@
                             android:textSize="12dp"/>
 
                         <CheckBox
-                            android:id="@+id/xposed_full_screen"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:text="@string/xposed_full_screen"
-                            android:textSize="16dp"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:text="@string/xposed_full_screen_desc"
-                            android:textSize="12dp"/>
-
-                        <CheckBox
                             android:id="@+id/xposed_config_webview_debug"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

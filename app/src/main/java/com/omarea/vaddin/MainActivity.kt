@@ -74,9 +74,6 @@ class MainActivity : AppCompatActivity() {
         xposed_config_webview_debug.setOnCheckedChangeListener { _, value ->
             spf.edit().putBoolean("xposed_webview_debug", value).commit()
         }
-        xposed_full_screen.setOnCheckedChangeListener { buttonView, isChecked ->
-            spf.edit().putBoolean("xposed_full_screen", isChecked).commit()
-        }
         if (XposedCheck.xposedIsRunning())
             vbootxposedservice_state.visibility = View.GONE
 
@@ -153,7 +150,6 @@ class MainActivity : AppCompatActivity() {
         xposed_config_dpi_fix.isChecked = spf.getBoolean("xposed_dpi_fix", true)
         xposed_config_cm_su.isChecked = spf.getBoolean("xposed_hide_su", false)
         xposed_config_webview_debug.isChecked = spf.getBoolean("xposed_webview_debug", false)
-        xposed_full_screen.isChecked = spf.getBoolean("xposed_full_screen", true)
 
         processBarDialog.showDialog()
         Thread({

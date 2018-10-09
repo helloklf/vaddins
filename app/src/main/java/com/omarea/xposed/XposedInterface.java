@@ -147,11 +147,6 @@ public class XposedInterface implements IXposedHookLoadPackage, IXposedHookZygot
         } catch (Throwable t) {
             XposedBridge.log(t);
         }
-
-        if(prefs.getBoolean("xposed_full_screen", true)) {
-            new FullScreeProcess().addMarginBottom();
-        }
-
     }
 
     @Override

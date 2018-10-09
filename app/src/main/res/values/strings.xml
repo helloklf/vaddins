@@ -19,6 +19,4 @@
     <string name="hide_on_recent">从最近任务列表隐藏</string>
     <string name="dpi">DPI</string>
     <string name="please_wait">正在执行，请稍等</string>
-    <string name="xposed_full_screen">全面屏优化</string>
-    <string name="xposed_full_screen_desc">强制开启所有应用的全面屏适配</string>
 </resources>
